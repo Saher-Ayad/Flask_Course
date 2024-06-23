@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>
+  <li><a href="#">About Page</a></li>
+</h1>
+
+<form>
+  {{ task_form.csrf_token }}
+  {{ task_form.task.label }}
+  {{ task_form.task }}
+  {{ task_form.submit}}
+</form>
+
+{% endblock %}
